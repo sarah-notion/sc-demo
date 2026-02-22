@@ -1,10 +1,10 @@
 Title: Runbook — SEV-2 Identity: Intermittent Login Failures (AU)
 
-Magic keywords
+Recent updates (Demo)
 
-- KEYWORD: runbook-wombat-44
-- KEYWORD: auth-quartz-61
-- INCIDENT: INC-AU-LOGIN-2026-02-OMEGA
+- Added clearer rollback criteria for edge gateway timeout changes.
+- Added “Definition of done” checklist for incident closure.
+- Added references for comms cadence (every 15–30 minutes during SEV-2).
 
 Symptoms
 
@@ -47,10 +47,4 @@ Definition of done
 
 - Login success rate back to baseline for 30 minutes
 - Error rate stabilised
-- Incident timeline + retro tasks created
-
-Demo search prompts
-
-- "INC-AU-LOGIN-2026-02-OMEGA"
-- "auth-quartz-61"
-- "feature flag login enrichments"
+- Incident timeline + retro tasks createD
