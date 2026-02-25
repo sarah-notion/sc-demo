@@ -1,0 +1,32 @@
+# SSO + SCIM demo PR #1
+
+This PR introduces a small, demo-friendly foundation for **SAML SSO configuration** and **SCIM provisioning** work.
+
+## What’s in scope (for the demo)
+- A basic “tenant/workspace” **SSO configuration object**
+- Validation for common IdP inputs:
+  - **IdP Entity ID**
+  - **SSO URL**
+  - **X.509 signing certificate**
+- A placeholder path for parsing **IdP metadata XML**
+- A few simple tests to show expected behaviour
+
+## Why this exists
+Enterprise customers typically want:
+- **SSO (SAML)** for centralised authentication
+- **SCIM** for automated provisioning and deprovisioning (access hygiene)
+
+This PR focuses on the configuration and guardrails needed before implementing the full auth + provisioning flows.
+
+## Example config (illustrative)
+```
+
+{
+
+"idpEntityId": "https://idp.example.com/metadata",
+
+"ssoUrl": "https://idp.example.com/saml2/sso",
+
+"x509Cert": "-----BEGIN CERTIFICATE-----nMIIC...snip...n-----END CERTIFICATE-----"
+
+}
